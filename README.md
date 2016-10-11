@@ -233,3 +233,13 @@ Example above means that: if js file is changed,  reloading won't be actived.
 
 ###LICENSE
 MIT
+
+
+###自己修改的符合自己的要求的
+增加了一个配置项，就是不再是直接根目录下，可以自定义一个二级目录，这样在某些特殊情况可以起作用，那就是增加一个配置项-s --secdir
+使用方式
+```
+puer -p 3000 -s demo999
+```
+这样就会生成一个目录中生成这样一个访问链接就是
+`localhost:3000/demo999/filepath`
